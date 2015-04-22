@@ -1,6 +1,8 @@
 package net.viralpatel.struts2;
 
-public class LoginAction {
+import com.opensymphony.xwork2.ActionSupport;
+
+public class LoginAction extends ActionSupport{
 	private String username;
 	private String password;
 	
@@ -17,6 +19,7 @@ public class LoginAction {
 		{
 			return "success";
 		}else{
+			addActionError(getText("error.login"));
 			return "error";
 		}
 	}

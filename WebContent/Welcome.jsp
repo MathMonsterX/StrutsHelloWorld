@@ -3,4 +3,4 @@
 
 <title>Welcome</title>
 
-<h2>Howdy, <s:property value="username">...!</s:property></h2>
+<h2>Howdy, <s:property value="username" />...!</h2>
