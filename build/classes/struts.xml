@@ -13,6 +13,10 @@
 			<result name="success">Welcome.jsp</result>
 			<result name="error">Login.jsp</result>
 		</action>
+		<action name="customer" class="net.viralpatel.struts2.CustomerAction">
+			<result name="success">Success.Customer.jsp</result>
+			<result name="input">Customer.jsp</result>
+		</action>
 	</package>
 </struts>
 
