@@ -8,9 +8,9 @@
 <h2>Customer Form</h2>
  
 <s:form action="customer.action" method="post" validate="true">
-    <s:textfield name="name" key="name" size="20" />
-    <s:textfield name="age" key="age" size="20" />
-    <s:textfield name="email" key="email" size="20" />
-    <s:textfield name="telephone" key="telephone" size="20" />
+    <s:textfield name="name" key="label.name" size="20" />
+    <s:textfield name="age" key="label.age" size="20" />
+    <s:textfield name="email" key="label.email" size="20" />
+    <s:textfield name="telephone" key="label.telephone" size="20" />
     <s:submit method="addCustomer" key="label.add.customer" align="center" />
 </s:form>
