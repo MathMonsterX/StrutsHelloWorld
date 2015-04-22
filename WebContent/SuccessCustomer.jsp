@@ -3,4 +3,4 @@
 
 <title>Customer Page - Struts2 Demo | ViralPatel.net</title>
  
-<h2>Customer, <s:property value="customer"/>, Added Successfully.</h2>
+<h2>Customer, <s:property value="name"/>, Added Successfully.</h2>
