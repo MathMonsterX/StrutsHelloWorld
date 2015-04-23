@@ -13,10 +13,22 @@
     <welcome-file-list>
         <welcome-file>Login.jsp</welcome-file>
     </welcome-file-list>
- 
-</web-app>
-
-<!-- 
+ 	<!-- 
 	The FilterDispatcher filter is deprecated since Struts version 2.1.3. 
 	If you are using latest version of Struts2 ( > 2.1.3) use StrutsPrepareAndExecuteFilter class instead.
- -->
+ 	-->
+ 
+ 	<listener>
+ 		<listener-class>org.Apache.struts2.tiles.StrutsTilesListener</listener-class>
+ 	</listener>
+ 	<context-param>
+ 		<param-name>tilesDefinition</param-name>
+ 		<param-name>/WEB-INF/tiles.xml</param-name>
+ 	</context-param>
+ 	<!-- 
+ 		"The above code configure Tiles listener in web.xml. 
+ 		An input configuration file /WEB-INF/tiles.xml is 
+ 		passed as argument. This file contains the Tiles 
+ 		definition for our web application."
+ 	 -->
+</web-app>
