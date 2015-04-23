@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app id="WebApp_9" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemalocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
- 
-    <display-name>Struts2 Application</display-name>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
     <filter>
     	<filter-name>struts2</filter-name>
     		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
@@ -19,11 +21,13 @@
  	-->
  
  	<listener>
- 		<listener-class>org.Apache.struts2.tiles.StrutsTilesListener</listener-class>
+ 		<listener-class>org.apache.struts2.tiles.StrutsTilesListener</listener-class>
  	</listener>
  	<context-param>
  		<param-name>tilesDefinition</param-name>
- 		<param-name>/WEB-INF/tiles.xml</param-name>
+ 		<param-value>/WEB-INF/tiles.xml</param-value>
+ 		<!-- There was an error here where the context param was being underlined
+ 			I have 2 param-name, instead of a name and value -->
  	</context-param>
  	<!-- 
  		"The above code configure Tiles listener in web.xml. 
